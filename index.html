@@ -1,0 +1,86 @@
+<html>
+
+	<head>
+		<title> </title>
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' type='text/css' href= "http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cosmo/bootstrap.min.css">
+
+		<style>
+			body {
+				margin-left:15%;
+				margin-right:15%;
+
+				font-family: 'Open Sans', sans-serif;
+			}
+		</style>
+
+		<script src ="http://code.jquery.com/jquery-2.1.1.js"></script>
+
+	</head>
+
+	<body>
+        
+		<!-- Add this code anywhere in the body tag. It will create a header. Preferably, add it on top of the <p> tag because headers are usually on top of all the other content -->
+		<div class="page-header">
+		   <h1>Simple Quiz 
+		      <small>Follow the Directions</small>
+		   </h1>
+		</div>
+
+        <p>Finish five multiplication questions as fast as possible. When you are done, submit as either male or female.</p>
+        <div class="input-group">
+
+            <span class="input-group-addon">3 x 1</span>
+            <input type="text" class="form-control" style="width:50px" id="no1">
+
+        </div>
+
+        <br> <!-- this is a line break -->
+
+        <div class="input-group">
+            <span class="input-group-addon">3 x 2</span>
+            <input type="text" class="form-control" style="width:50px" id="no2">
+        </div>
+
+        <br> <!-- this is a line break -->
+
+        <div class="input-group">
+            <span class="input-group-addon">3 x 3</span>
+            <input type="text" class="form-control" style="width:50px" id="no3">
+        </div>
+
+        <br> <!-- this is a line break -->
+
+        <div class="input-group">
+            <span class="input-group-addon">3 x 4</span>
+            <input type="text" class="form-control" style="width:50px" id="no4">
+        </div>
+
+        <br> <!-- this is a line break -->
+
+        <div class="input-group">
+            <span class="input-group-addon">3 x 5</span>
+            <input type="text" class="form-control" style="width:50px" id="no5">
+        </div>
+
+        <hr>
+
+        <p class="btn btn-primary" style="border-radius: 8px;">Submit as Male</p>
+        <p class="btn btn-danger" style="border-radius: 8px;">Submit as Female</p>
+
+        <script type="text/javascript">
+        var startTime = Date.now();
+        
+        	$(".btn").click(function(){
+       
+        		alert((Date.now() - startTime) / 1000 + "seconds");
+ 
+        	});
+
+        </script>
+
+
+    </body>
+
+</html>
